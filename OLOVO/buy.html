@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/buy.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Forum&family=Open+Sans:wght@300;400&family=Playfair+Display&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <title>OLOVO</title>
+</head>
+
+<body>
+    <div class="buy-wrapper">
+        <a href="./index.html" class="buy_close"><img src="./images/closing.png" alt="closing"></a>
+        <h1 class="buy-content__title">
+            ЗАКАЗ:
+        </h1>
+        <div class="buy-content">
+            <div class="buy-content_image">
+                <img src="./images/gerb-version.jpg" alt="gerbariy" class="buy-content__image">
+            </div>
+            <div class="buy-content_text">
+                <span class="buy-content__text">
+                    Кулон с полевой геранью
+                </span>
+                <span class="buy-content__text_about">
+                    2,5 х 4 см
+                </span>
+                <span class="buy-content__text_about">
+                    цепочка 50 см
+                </span>
+            </div>
+            <div class="buy-content_price">
+                <span class="buy-content__price">
+                    650 Р.
+                </span>
+            </div>
+            <div class="buy-content_select">
+                <select name="select" class="buy-content__select" id="mySelect">
+                    <!--Supplement an id here instead of using 'name'-->
+                    <option value="value1" selected class="buy-content__select_menu" id="price__select"> 1</option>
+                    <option value="value2" class="buy-content__select_menu" id="price__select"> 2</option>
+                    <option value="value3" class="buy-content__select_menu" id="price__select"> 3</option>
+                    <option value="value3" class="buy-content__select_menu" id="price__select"> 4</option>
+
+                </select>
+            </div>
+
+        </div>
+        <h2 class="price-content__title">
+            Общая стоимость: 650 Р.<div id="price"></div>
+        </h2>
+
+        <form action="#" class="buy-content_form">
+            <input type="text" name="email" placeholder="Ваше имя" id="input" required><br>
+            <input type="text" name="name" placeholder="+7(999) 999-99-99" id="input" required><br>
+            <input type="email" name="email" placeholder="Ваш Email" id="input" required><br>
+            <p class="buy_form__text">
+                Доставка
+            </p>
+
+            <input type="radio" name="check1" value="Yandex" id="input_radio"> <span class="input_radio__text"> Доставка
+                Яндекс курьером по г.Йошкар -
+                Оле, Медведево, Руэм</span> <br>
+
+            <input type="text" name="address" placeholder=" Адрес-доставки" id="inputsecond" required><br>
+
+            <input type="radio" name="check1" value="SDEK" id="input_radio2"> <span class="input_radio__text" >
+                СДЭК по
+                России </span> <span class="form__text_dec">Стоимость доставки может меняться от веса
+                изделия.</span><br>
+
+            <input type="text" name="address" placeholder=" Адрес-доставки" id="input3"  required><br>
+            <button class="buy_form__button">
+                Оформить заказ
+            </button>
+        </form>
+        <p class="buy__text">Оплата принимается переводом на карту или через Систему быстрых платежей (СБП)</p>
+
+
+
+    </div>
+    <script src="js/sum.js"></script>
+    <script src="js/radioButton.js"></script>
+</body>
+
+</html>
